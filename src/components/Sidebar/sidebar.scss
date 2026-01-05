@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+
 .sidebar {
   width: 260px;
   background: white;
@@ -28,15 +29,15 @@
 
 
   &__overlay {
-   display: none;
+    display: none;
 
-  @media (max-width: 968px) {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 999;
-  }
+    @media (max-width: 968px) {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 999;
+    }
 
   }
 
@@ -105,6 +106,7 @@
     color: currentColor;
   }
 }
+
 .sidebar__bottom {
   padding: 16px 0;
 }
@@ -118,7 +120,8 @@
 .sidebar__logout {
   font-weight: 500;
   color: #213F7D;
-opacity: 1 !important;
+  opacity: 1 !important;
+
   &:hover {
     background: rgba(214, 69, 69, 0.08);
   }
@@ -127,14 +130,14 @@ opacity: 1 !important;
 .sidebar__version {
   font-size: 12px;
   color: #213F7D;
-opacity: 1 !important;
+  opacity: 1 !important;
   margin-top: 8px;
   padding-left: 24px;
 }
+
 .sidebar__nav {
   flex: 1;
   overflow-y: auto;
 }
+
 /* === Sidebar overlay fix === */
-
-

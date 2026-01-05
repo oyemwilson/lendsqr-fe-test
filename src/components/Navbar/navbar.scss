@@ -7,11 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- border-bottom: 1px solid rgba(33, 63, 125, 0.06);
-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   position: relative;
   z-index: 10;
-  
+
 
   &__hamburger {
     display: none;
@@ -39,11 +39,12 @@ box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
       transform: translateX(-5px);
     }
   }
-      &__doc{
-      text-decoration: underline;
 
-      
-    }
+  &__doc {
+    text-decoration: underline;
+
+
+  }
 
   &__search {
     display: flex;
@@ -95,7 +96,7 @@ box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   }
 
 
-  &__bell{
+  &__bell {
     padding: 0 20px;
   }
 
@@ -112,17 +113,19 @@ box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     }
 
   }
-  .navbar__profile > svg:first-child,
-.navbar__profile > img:first-child {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+  .navbar__profile>svg:first-child,
+  .navbar__profile>img:first-child {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media (max-width: 968px) {
     &__hamburger {
       display: block;
@@ -147,24 +150,25 @@ box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
       display: block;
     }
 
-      &__doc {
-    display: none;
-  }
     &__doc {
-    display: none;
-  }
+      display: none;
+    }
 
-  &__profile span {
-    display: none;
-  }
+    &__doc {
+      display: none;
+    }
 
-  &__profile svg:last-child {
-    display: none;
-  }
+    &__profile span {
+      display: none;
+    }
 
-  &__right {
-    gap: 12px;
-  }
+    &__profile svg:last-child {
+      display: none;
+    }
+
+    &__right {
+      gap: 12px;
+    }
 
     &__logo {
       margin-left: 8px;
@@ -199,34 +203,35 @@ box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
       }
     }
   }
+
   @media (min-width: 769px) and (max-width: 1100px) {
-  .navbar {
-    padding: 0 20px;
+    .navbar {
+      padding: 0 20px;
 
-    &__left {
-      gap: 32px; // reduce from 140px
-    }
+      &__left {
+        gap: 32px; // reduce from 140px
+      }
 
-    &__search {
-      width: 260px; // shrink search bar
-    }
+      &__search {
+        width: 260px; // shrink search bar
+      }
 
-    &__doc {
-      display: none; // still hide Docs on tablet
-    }
+      &__doc {
+        display: none; // still hide Docs on tablet
+      }
 
-    &__profile span {
-      display: none; // hide name to save space
-    }
+      &__profile span {
+        display: none; // hide name to save space
+      }
 
-    &__profile svg:last-child {
-      display: none; // hide dropdown chevron
-    }
+      &__profile svg:last-child {
+        display: none; // hide dropdown chevron
+      }
 
-    &__right {
-      gap: 16px;
+      &__right {
+        gap: 16px;
+      }
     }
   }
-}
 
 }

@@ -66,18 +66,18 @@ const Users = () => {
           onToggleFilter={() => setShowFilter(prev => !prev)}
         />
 
-{showFilter && (
-  <UsersFilter
-    users={allUsers}
-    filters={filters}
-    onChange={updateFilters}
-    onReset={() => {
-      resetFilters();
-      setShowFilter(false);
-    }}
-    onClose={() => setShowFilter(false)}
-  />
-)}
+        {showFilter && (
+          <UsersFilter
+            users={allUsers}
+            filters={filters}
+            onChange={updateFilters}
+            onReset={() => {
+              resetFilters();
+              setShowFilter(false);
+            }}
+            onClose={() => setShowFilter(false)}
+          />
+        )}
 
       </div>
 
@@ -85,7 +85,7 @@ const Users = () => {
       <div className="users__pagination">
         <div className="pagination__info">
           Showing{" "}
-          <select 
+          <select
             className="pagination__select"
             value={itemsPerPage}
             onChange={(e) => {
@@ -101,7 +101,7 @@ const Users = () => {
           </select>{" "}
           out of {allUsers.length}
         </div>
-        
+
         <div className="pagination__controls">
           <button
             className="pagination__arrow"
@@ -111,38 +111,36 @@ const Users = () => {
           >
             ‹
           </button>
-          
-<div className="pagination__numbers">
-  {/* First 3 pages */}
-  {Array.from({ length: Math.min(3, totalPages) }, (_, i) => i + 1).map(page => (
-    <button
-      key={page}
-      className={currentPage === page ? 'active' : ''}
-      onClick={() => setCurrentPage(page)}
-    >
-      {page}
-    </button>
-  ))}
 
-  {/* Ellipsis if there's a gap */}
-  {totalPages > 5 && <span className="pagination__dots">...</span>}
+          <div className="pagination__numbers">
+            {/* First 3 pages */}
+            {Array.from({ length: Math.min(3, totalPages) }, (_, i) => i + 1).map(page => (
+              <button
+                key={page}
+                className={currentPage === page ? 'active' : ''}
+                onClick={() => setCurrentPage(page)}
+              >
+                {page}
+              </button>
+            ))}
 
-  {/* Last 2 pages */}
-  {totalPages > 3 &&
-    [totalPages - 1, totalPages]
-      .filter(page => page > 3)
-      .map(page => (
-        <button
-          key={page}
-          className={currentPage === page ? 'active' : ''}
-          onClick={() => setCurrentPage(page)}
-        >
-          {page}
-        </button>
-      ))}
-</div>
+            {/* Ellipsis if there's a gap */}
+            {totalPages > 5 && <span className="pagination__dots">...</span>}
 
-          
+            {/* Last 2 pages */}
+            {totalPages > 3 &&
+              [totalPages - 1, totalPages]
+                .filter(page => page > 3)
+                .map(page => (
+                  <button
+                    key={page}
+                    className={currentPage === page ? 'active' : ''}
+                    onClick={() => setCurrentPage(page)}
+                  >
+                    {page}
+                  </button>
+                ))}
+          </div>
           <button
             className="pagination__arrow"
             disabled={currentPage === totalPages}

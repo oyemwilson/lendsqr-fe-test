@@ -30,7 +30,8 @@ export interface User {
     bank: string;
   };
   status: "Active" | "Inactive" | "Pending" | "Blacklisted";
-    hasLoan: boolean;
+  organization: "Lendsqr" | "Irorun" | "Lendstar",
+  hasLoan: boolean;
   hasSavings: boolean;
 }
 
