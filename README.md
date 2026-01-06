@@ -1,22 +1,3 @@
-Thanks for the screenshot — super helpful 👍
-I can see exactly what’s going on, and it’s mostly **small Markdown formatting issues**, not content problems.
-
-### 🔍 What I see in your screenshot
-
-1. Some headings are not rendering as headings (they’re showing `##` literally).
-2. The horizontal rules are inconsistent (`---` vs rendered `---` text).
-3. The table is rendered as plain text instead of a table.
-4. The `Project Structure` code block fence is slightly off.
-5. Some emoji headings are not being parsed as headings because of spacing.
-
-All of this is due to **missing blank lines and incorrect fence placement**.
-
----
-
-## ✅ **Here is the fixed README that will render perfectly on GitHub**
-
-👉 **Replace your entire README with this version exactly as-is:**
-
 ````md
 # Lendsqr Frontend Assessment
 
