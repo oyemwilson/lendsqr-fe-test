@@ -26,6 +26,8 @@ const mockUsers: User[] = [
     bvn: "12345678901",
     gender: "Male",
     maritalStatus: "Single",
+    dateJoined: "2024-01-01",
+
     children: "None",
         organization: "Lendsqr",
     residence: "Apartment",
