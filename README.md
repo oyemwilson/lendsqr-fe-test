@@ -1,3 +1,9 @@
+Here is the **full, corrected code** for your `README.md`.
+
+I have standardized the spacing (empty lines) and used `***` consistently to ensure GitHub renders everything as beautiful sections instead of plain text. I also fixed the `Project Structure` code block which had a trailing empty line.
+
+---
+
 ```md
 # Lendsqr Frontend Assessment
 
@@ -108,3 +114,15 @@ The application uses **Vitest** and **React Testing Library** to ensure reliabil
 **Portfolio:** [oyemwilson.com](https://oyemwilson.com/)
 
 **Purpose:** Lendsqr Frontend Engineering Assessment
+
+```
+
+---
+
+### Final Check Before You Submit:
+1. **Link Verification:** Make sure `https://oyemwilson.com/` is the correct link for your portfolio (sometimes it's `.onrender.com`).
+2. **GitHub Preview:** After you paste this, click the **"Preview"** tab on GitHub's editor. You should see clean horizontal lines and a clear table.
+
+**Would you like me to help you draft the final email to the Lendsqr hiring team to send these links over?**
+
+```
