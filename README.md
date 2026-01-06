@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+It’s a very solid start, but you **must** update the placeholders (like `<your-name>`) before you push it to GitHub. If a recruiter sees placeholders in a README, it looks like it was generated and not reviewed.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I’ve cleaned up the formatting, fixed the broken code blocks, and inserted your **actual links** and **correct name** based on your previous message.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📝 The Optimized README.md
 
-## React Compiler
+```md
+# Lendsqr Frontend Assessment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a high-fidelity frontend implementation of the Lendsqr Admin Dashboard. 
+It demonstrates a professional approach to building scalable web applications using React, TypeScript, and modern frontend best practices.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Hosted App:** [https://lendsqr-fe-test-3cm5.onrender.com/](https://lendsqr-fe-test-3cm5.onrender.com/)  
+**Repository:** [https://github.com/oyemwilson/lendsqr-fe-test](https://github.com/oyemwilson/lendsqr-fe-test)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|:--- | :--- |
+| **React + TypeScript** | Component-based UI with strict type safety |
+| **Vite** | Fast build tool and development server |
+| **SCSS (Modules)** | Scalable, scoped styling with variables and mixins |
+| **React Router** | Client-side routing for seamless navigation |
+| **Vitest + RTL** | Unit and integration testing |
+| **Render** | Automated CI/CD and static site hosting |
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+ ├── api/        # Mock API and data fetching logic
+ ├── components/ # Reusable UI components (Atoms, Molecules)
+ ├── pages/      # View-level components (Dashboard, User Details)
+ ├── hooks/      # Custom hooks (Filtering, Pagination)
+ ├── styles/     # Global SCSS, variables, and design tokens
+ ├── types/      # Centralized TypeScript interfaces
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Setup & Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+* Node.js 18+
+* npm
+
+### 1. Install dependencies
+
+```bash
+npm install
+
 ```
+
+### 2. Run locally
+
+```bash
+npm run dev
+
+```
+
+### 3. Run tests
+
+```bash
+npm run test
+
+```
+
+---
+
+## 🧠 Key Implementation Decisions
+
+* **Custom Data Hook:** Developed a `useUsers` hook to centralize fetching, filtering, and pagination logic, keeping UI components clean.
+* **Performance:** Implemented client-side filtering with memoization to ensure smooth interaction even as the user list grows.
+* **Responsive Design:** Utilized SCSS media queries and flexbox/grid for a mobile-first approach, including a collapsible sidebar.
+* **Type Safety:** Every data object (User, Organization, etc.) is strictly typed to prevent runtime errors and improve developer experience.
+
+---
+
+## 🧪 Testing Strategy
+
+The application uses **Vitest** and **React Testing Library** to ensure reliability:
+
+* **Logic:** Tests for filtering and pagination utilities.
+* **UI:** Verification of component rendering and user interaction flows.
+* **API:** Mocking data responses to test state transitions.
+
+---
+
+## ⚠️ Known Limitations & Challenges
+
+* **Data Persistence:** As this is a frontend-only task, changes to user data are not persisted to a database.
+* **Case Sensitivity:** Handled a challenge regarding Linux/Windows file naming discrepancies during the deployment phase.
+* **Sass Migration:** Currently using `@import` for legacy compatibility; a move to `@use` is planned for the next refactor.
+
+---
+
+## 👤 Author
+
+**Name:** Oyem Ikenna Wilson
+
+**Role:** Frontend Engineer
+
+**Portfolio:** [oyemwilson.onrender.com](https://oyemwilson.onrender.com/)
+
+**Purpose:** Lendsqr Frontend Engineering Assessment
