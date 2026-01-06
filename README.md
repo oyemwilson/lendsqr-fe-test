@@ -1,30 +1,30 @@
-````md
+```md
 # Lendsqr Frontend Assessment
 
-This project is a high-fidelity frontend implementation of the Lendsqr Admin Dashboard.  
+This project is a high-fidelity frontend implementation of the Lendsqr Admin Dashboard. 
 It demonstrates a professional approach to building scalable web applications using React, TypeScript, and modern frontend best practices.
 
----
+***
 
 ## 🚀 Live Demo
 
-**Hosted App:** https://lendsqr-fe-test-3cm5.onrender.com/  
-**Repository:** https://github.com/oyemwilson/lendsqr-fe-test
+**Hosted App:** [https://lendsqr-fe-test-3cm5.onrender.com/](https://lendsqr-fe-test-3cm5.onrender.com/)  
+**Repository:** [https://github.com/oyemwilson/lendsqr-fe-test](https://github.com/oyemwilson/lendsqr-fe-test)
 
----
+***
 
 ## 🛠 Tech Stack
 
 | Technology | Purpose |
-|-----------|----------|
-| React + TypeScript | Component-based UI with strict type safety |
-| Vite | Fast build tool and development server |
-| SCSS (Modules) | Scalable, scoped styling with variables and mixins |
-| React Router | Client-side routing for seamless navigation |
-| Vitest + RTL | Unit and integration testing |
-| Render | Automated CI/CD and static site hosting |
+|:--- | :--- |
+| **React + TypeScript** | Component-based UI with strict type safety |
+| **Vite** | Fast build tool and development server |
+| **SCSS (Modules)** | Scalable, scoped styling with variables and mixins |
+| **React Router** | Client-side routing for seamless navigation |
+| **Vitest + RTL** | Unit and integration testing |
+| **Render** | Automated CI/CD and static site hosting |
 
----
+***
 
 ## 📁 Project Structure
 
@@ -35,8 +35,9 @@ src/
  ├── pages/      # View-level components (Dashboard, User Details)
  ├── hooks/      # Custom hooks (Filtering, Pagination)
  ├── styles/     # Global SCSS, variables, and design tokens
- └── types/      # Centralized TypeScript interfaces
-````
+ ├── types/      # Centralized TypeScript interfaces
+
+```
 
 ---
 
@@ -47,22 +48,25 @@ src/
 * Node.js 18+
 * npm
 
-### Install dependencies
+### 1. Install dependencies
 
 ```bash
 npm install
+
 ```
 
-### Run locally
+### 2. Run locally
 
 ```bash
 npm run dev
+
 ```
 
-### Run tests
+### 3. Run tests
 
 ```bash
 npm run test
+
 ```
 
 ---
@@ -88,16 +92,21 @@ The application uses **Vitest** and **React Testing Library** to ensure reliabil
 
 ## ⚠️ Challenges & Resolutions
 
-* **Cross-Platform Case Sensitivity:** Encountered import errors during the Linux-based build process on Render. Resolved by enforcing consistent file naming and matching import paths.
-* **Bundle Size Optimization:** Analyzed build reports to manage large mock datasets; implemented lazy loading for non-critical routes.
-* **Sass Migration:** Structured styles to be compatible with modern `@use` and `@forward` modules for future-proofing.
-* **Data Persistence:** As this is a frontend-only task, user changes are handled in state and are not persisted.
+* **Cross-Platform Case Sensitivity:** Encountered import errors during the Linux-based build process on Render. Resolved by enforcing a strict kebab-case naming convention for all files.
+* **Bundle Size Optimization:** Analyzed build reports to manage large mock datasets; implemented code-splitting for non-critical routes to optimize initial load time.
+* **Sass Migration:** Proactively restructured the style architecture to be compatible with modern `@use` and `@forward` modules for future-proofing.
+* **Data Persistence:** As this is a frontend-only task, changes to user data are handled via state and are not persisted to a database.
 
 ---
 
 ## 👤 Author
 
 **Name:** Oyem Ikenna Wilson
+
 **Role:** Frontend Engineer
-**Portfolio:** [https://oyemwilson.com/](https://oyemwilson.com/)
+
+**Portfolio:** [oyemwilson.com](https://oyemwilson.com/)
+
 **Purpose:** Lendsqr Frontend Engineering Assessment
+
+```
