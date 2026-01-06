@@ -632,3 +632,56 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .users__pagination {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .pagination__info {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pagination__controls {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pagination__numbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination__select {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination__info {
+    font-size: 13px;
+  }
+
+  .pagination__select {
+    padding: 6px 28px 6px 10px;
+    font-size: 13px;
+  }
+
+  .pagination__arrow {
+    font-size: 20px;
+    padding: 0 4px;
+  }
+
+  .pagination__numbers button {
+    min-width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+}
