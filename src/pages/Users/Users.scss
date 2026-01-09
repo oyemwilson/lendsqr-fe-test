@@ -336,9 +336,10 @@
   width: fit-content;
 
   &--active {
-    background: rgba(57, 205, 204, 0.1);
+  background: rgba(57, 205, 98, 0.06);
     color: #39CD62;
   }
+  
 
   &--inactive {
     background: rgba(84, 95, 125, 0.1);
